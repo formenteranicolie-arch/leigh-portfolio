@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leigh Nicolie A. Formentera | CODM Pro • Captain • Webmaster</title>
+<meta name="description" content="Personal portfolio of Leigh Nicolie A. Formentera: CODM pro player, team captain and webmaster.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<nav aria-label="Main navigation">
+  <span class="logo">LNF</span>
+  <a class="lnk" href="#home">HOME</a>
+  <a class="lnk" href="#stats">STATS</a>
+  <a class="lnk" href="#play">PLAY</a>
+  <a class="lnk" href="#wins">WINS</a>
+  <a class="lnk" href="#works">WORKS</a>
+  <a class="lnk" href="#cebu">CEBU</a>
+  <a class="lnk" href="#contact">CONTACT</a>
+  <button id="soundBtn" aria-pressed="false" aria-label="Toggle sound effects (off by default)" title="Sound effects">🔇</button>
+</nav>
+
+<main>
+<!-- HERO -->
+<section id="home">
+  <div>
+    <span class="tag">● AE SUPREME CLS</span>
+    <h1><span class="glitch" data-t="Leigh Nicolie">Leigh Nicolie</span><br>A. Formentera</h1>
+    <div class="typer" id="typer" aria-label="CODM Pro Player, Team Captain, Webmaster"></div>
+    <p class="hero-p">93,000+ CODM kills, 15,900+ Mobile Legends matches, one esports squad and a few websites I built myself. Scroll down: real stats, a quick game, tournament posters and a very important lechon.</p>
+    <div class="btns">
+      <a class="btn" href="#play">⚡ PLAY A QUICK GAME</a>
+      <a class="btn alt" href="#cebu">🐖 TASTE OF CEBU</a>
+    </div>
+    <div class="scrollcue">▼ SCROLL TO EXPLORE ▼</div>
+  </div>
+  <div class="photo-wrap reveal">
+    <div class="photo">
+      <img src="Images/zero.jpg" alt="Portrait of Leigh Nicolie A. Formentera" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div class="initials" style="display:none" aria-hidden="true">LF</div>
+    </div>
+    <div class="badge-float">CAPTAIN</div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <h2 class="title reveal">PLAYER <span>STATS</span></h2>
+  <p class="sub reveal">These are real numbers from my game accounts. Switch the tabs, then tap "View proof" to see the screenshot.</p>
+  <div class="stats">
+    <div class="stat glass reveal"><b data-count="93147">0</b><small>CODM total kills</small></div>
+    <div class="stat glass reveal"><b data-count="15922">0</b><small>MLBB matches played</small></div>
+    <div class="stat glass reveal"><b data-count="2017">0</b><small>CODM Battle Royale wins</small></div>
+    <div class="stat glass reveal"><b data-count="1647">0</b><small>MLBB MVPs</small></div>
+  </div>
+
+  <div class="tabs reveal" role="tablist" aria-label="Game stats">
+    <button class="tab" role="tab" id="t-br" aria-controls="p-br" aria-selected="true">🔫 CODM BATTLE ROYALE</button>
+    <button class="tab" role="tab" id="t-mp" aria-controls="p-mp" aria-selected="false">🎯 CODM MULTIPLAYER</button>
+    <button class="tab" role="tab" id="t-ml" aria-controls="p-ml" aria-selected="false">⚔️ MOBILE LEGENDS</button>
+  </div>
+
+  <div class="panel glass reveal" role="tabpanel" id="p-br" aria-labelledby="t-br">
+    <div class="tiles">
+      <div class="tile"><b>3,743</b><small>MVP</small></div>
+      <div class="tile"><b>2,017</b><small>Wins</small></div>
+      <div class="tile"><b>9,845</b><small>Matches</small></div>
+      <div class="tile"><b>48,049</b><small>Kills</small></div>
+      <div class="tile"><b>1,346</b><small>Avg. damage</small></div>
+      <div class="tile"><b>20.98%</b><small>Avg. accuracy</small></div>
+    </div>
+    <button class="proof" data-src="Images/twelve.jpg" data-cap="CODM Battle Royale statistics">📸 VIEW PROOF</button>
+  </div>
+  <div class="panel glass" role="tabpanel" id="p-mp" aria-labelledby="t-mp" hidden>
+    <div class="tiles">
+      <div class="tile"><b>1,050</b><small>MVP</small></div>
+      <div class="tile"><b>5,642</b><small>Games</small></div>
+      <div class="tile"><b>2,413</b><small>Top 3 finishes</small></div>
+      <div class="tile"><b>45,098</b><small>Kills</small></div>
+      <div class="tile"><b>1.30</b><small>K/D ratio</small></div>
+      <div class="tile"><b>18.47%</b><small>Avg. accuracy</small></div>
+    </div>
+    <button class="proof" data-src="Images/fourteen.jpg" data-cap="CODM Multiplayer statistics">📸 VIEW PROOF</button>
+  </div>
+  <div class="panel glass" role="tabpanel" id="p-ml" aria-labelledby="t-ml" hidden>
+    <div class="tiles">
+      <div class="tile"><b>15,922</b><small>Matches</small></div>
+      <div class="tile"><b>55.95%</b><small>Win rate</small></div>
+      <div class="tile"><b>1,647</b><small>MVP</small></div>
+      <div class="tile"><b>51</b><small>Savage</small></div>
+      <div class="tile"><b>239</b><small>Maniac</small></div>
+      <div class="tile"><b>1,093</b><small>Legendary</small></div>
+      <div class="tile"><b>18</b><small>Longest win streak</small></div>
+      <div class="tile"><b>1,865</b><small>First Blood</small></div>
+    </div>
+    <button class="proof" data-src="Images/fifteen.jpg" data-cap="Mobile Legends statistics (all seasons)">📸 VIEW PROOF</button>
+  </div>
+
+  <div class="cols">
+    <div class="skills glass reveal">
+      <div class="skill"><div class="row"><span>🎯 CODM Strategy</span><span>89%</span></div><div class="bar"><i data-w="89"></i></div></div>
+      <div class="skill"><div class="row"><span>⚔️ MLBB Mechanics</span><span>90%</span></div><div class="bar"><i data-w="90"></i></div></div>
+      <div class="skill"><div class="row"><span>👑 Team Leadership</span><span>75%</span></div><div class="bar"><i data-w="75"></i></div></div>
+      <div class="skill"><div class="row"><span>💻 Web Development</span><span>70%</span></div><div class="bar"><i data-w="70"></i></div></div>
+    </div>
+    <div class="card-player glass reveal">
+      <h3>PLAYER CARD</h3>
+      <div class="role">Leigh Nicolie A. Formentera</div>
+      <div>🎮 CODM IGN: <b>AE Lei CLS</b><br>🛡️ MLBB IGN: <b>LeiYearns4U</b><br>👥 Squad: <b>AE Supreme CLS</b> (Apex Empire)<br>🌐 Off-duty: Webmaster</div>
+      <div class="badges">
+        <span class="chip">🏆 CODM Pro</span><span class="chip">👑 Team Captain</span><span class="chip">💎 Mythical Glory</span><span class="chip">🌐 Webmaster</span>
+      </div>
+    </div>
+  </div>
+  <div class="hobbies reveal">
+    <button class="hob" data-fx="CODM: Headshot! 🎯"><span>🔫</span>Call of Duty: Mobile</button>
+    <button class="hob" data-fx="MLBB: Savage! ⚔️"><span>🗡️</span>Mobile Legends</button>
+    <button class="hob" data-fx="Webmaster mode: ON 💻"><span>💻</span>Web Development</button>
+    <button class="hob" data-fx="GG, squad! 👑"><span>👑</span>Team Leadership</button>
+  </div>
+</section>
+
+<!-- GAME -->
+<section id="play">
+  <h2 class="title reveal">QUICK <span>AIM TEST</span></h2>
+  <p class="sub reveal">Tap as many targets as you can in 10 seconds. Beat my captain standard: 15 hits.</p>
+  <div class="hud reveal"><div>TIME <b id="gTime">10</b>s</div><div>SCORE <b id="gScore">0</b></div><div>BEST <b id="gBest">0</b></div></div>
+  <div id="arena" class="glass reveal">
+    <button id="target" aria-label="Target: click or tap me"></button>
+    <div id="overlay">
+      <div>
+        <h3 id="ovTitle">READY, PLAYER?</h3>
+        <p id="ovMsg">Targets pop up at random. Be quick!</p>
+        <button class="btn" id="startBtn">▶ START</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WINS -->
+<section id="wins">
+  <h2 class="title reveal">TOURNAMENT <span>TRAIL</span></h2>
+  <p class="sub reveal">Playing for <b>AE Supreme CLS</b> (Apex Empire) in Call of Duty: Mobile Battle Royale. Tap any poster to enlarge it.</p>
+  <div class="trophies">
+    <div class="trophy reveal">🏆 Seasonal Champion ×1<small>Mobile Legends</small></div>
+    <div class="trophy reveal">💎 Mythical Glory<small>Highest rank: 122★</small></div>
+    <div class="trophy reveal">🔥 18-game win streak<small>Mobile Legends</small></div>
+    <div class="trophy reveal">⚡ 4 tournament game days<small>Sep 27 to Oct 20, 2026</small></div>
+  </div>
+  <div class="cards">
+    <button class="gcard reveal" data-src="Images/four.jpg" data-cap="Sep 27 • Garena Battle Royale Cup 2026: Qualifiers">
+      <div class="im"><img src="Images/four.jpg" alt="AE Supreme CLS game day poster, Garena Battle Royale Cup 2026 Qualifiers" loading="lazy"></div>
+      <div class="tx"><div class="d">SEP 27 • 8:30 PM</div><h4>BR Cup 2026 Qualifiers</h4><p>Where the run started.</p></div></button>
+    <button class="gcard reveal" data-src="Images/one.jpg" data-cap="Oct 10-11 • Garena Battle Royale Cup 2026: Group Stage">
+      <div class="im"><img src="Images/one.jpg" alt="AE Supreme CLS game day poster, Garena Battle Royale Cup 2026 Group Stage" loading="lazy"></div>
+      <div class="tx"><div class="d">OCT 10-11</div><h4>BR Cup 2026 Group Stage</h4><p>Two days of back-to-back lobbies.</p></div></button>
+    <button class="gcard reveal" data-src="Images/three.jpg" data-cap="Oct 14 • Autumn Ascension Finals">
+      <div class="im"><img src="Images/three.jpg" alt="Autumn Ascension finals game day poster featuring AE Beru CLS and AE Lei CLS" loading="lazy"></div>
+      <div class="tx"><div class="d">OCT 14 • 8:00 PM</div><h4>Autumn Ascension Finals</h4><p>Duo game day with AE Beru.</p></div></button>
+    <button class="gcard reveal" data-src="Images/two.jpg" data-cap="Oct 20 • Bloom of Valor Non-Pro Battle Royale Tournament Finals">
+      <div class="im"><img src="Images/two.jpg" alt="AE Supreme CLS finals game day poster, Bloom of Valor Non Pro Battle Royale Tournament" loading="lazy"></div>
+      <div class="tx"><div class="d">OCT 20 • 8:00 PM</div><h4>Bloom of Valor Finals</h4><p>Non-Pro Battle Royale Tournament.</p></div></button>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <h2 class="title reveal">MY <span>JOURNEY</span></h2>
+  <p class="sub reveal">Hover or tap a card to flip it, then follow the timeline.</p>
+  <div class="flips">
+    <button class="flip reveal" aria-label="Flip card: Captain"><div class="in2">
+      <div class="face f glass"><span>👑</span><h3>THE CAPTAIN</h3></div>
+      <div class="face b">I lead my squad with calm calls, clear roles and a lot of communication. A good captain makes everyone play better.</div></div></button>
+    <button class="flip reveal" aria-label="Flip card: Pro Player"><div class="in2">
+      <div class="face f glass"><span>🎯</span><h3>THE PRO</h3></div>
+      <div class="face b">3,743 Battle Royale MVPs and 2,017 wins in CODM. I study maps, loadouts and enemy habits so every match has a plan.</div></div></button>
+    <button class="flip reveal" aria-label="Flip card: Webmaster"><div class="in2">
+      <div class="face f glass"><span>💻</span><h3>THE WEBMASTER</h3></div>
+      <div class="face b">I build websites and apps with my groupmates using HTML, CSS and JavaScript. Yes, including the one you're on right now.</div></div></button>
+  </div>
+  <div class="timeline">
+    <div class="tl glass reveal"><h4>LEVEL 1 • THE START</h4>Joined Mobile Legends 9 years ago and never left.</div>
+    <div class="tl glass reveal"><h4>LEVEL 2 • THE GRIND</h4>15,900+ MLBB matches and 15,400+ CODM matches later, every loss became a lesson.</div>
+    <div class="tl glass reveal"><h4>LEVEL 3 • THE SQUAD</h4>Joined AE Supreme CLS and went through qualifiers, group stage and finals in October 2026.</div>
+    <div class="tl glass reveal"><h4>LEVEL 4 • THE WEBMASTER</h4>Built Grab N Kaon, a UC Grade Tracking System and a Surf Game with my groups. Next boss: this 45-second challenge. 😎</div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <h2 class="title reveal">WEBMASTER <span>WORKS</span></h2>
+  <p class="sub reveal">Group projects I helped build. Tap a card to see it bigger.</p>
+  <div class="cards">
+    <button class="gcard wide reveal" data-src="Images/ten.jpg" data-cap="Grab N Kaon: ordering system login screen">
+      <div class="im"><img src="Images/ten.jpg" alt="Grab N Kaon ordering system login screen with green theme" loading="lazy"></div>
+      <div class="tx"><div class="d">GROUP PROJECT</div><h4>Grab N Kaon</h4><p>A food ordering system with a clean green login and sign-up flow.</p><div class="tags"><span>Ordering</span><span>Login</span><span>UI</span></div></div></button>
+    <button class="gcard wide reveal" data-src="Images/eight.jpg" data-cap="UC Grade Tracking System: sign-in screen design">
+      <div class="im"><img src="Images/eight.jpg" alt="University of Cebu grade tracking system sign in screen design" loading="lazy"></div>
+      <div class="tx"><div class="d">FINAL PROJECT</div><h4>UC Grade Tracking System</h4><p>Sign-in, account creation and dashboard screens designed for University of Cebu (42 slides).</p><div class="tags"><span>Design</span><span>Dashboard</span><span>Student</span></div></div></button>
+    <button class="gcard wide reveal" data-src="Images/nine.jpg" data-cap="Surf Game: inspired by Microsoft Edge Surf">
+      <div class="im"><img src="Images/nine.jpg" alt="Surf Game start screen with a surfer, a shark and coins" loading="lazy"></div>
+      <div class="tx"><div class="d">GAME PROJECT</div><h4>Surf Game</h4><p>Dodge rocks and sharks, grab coins, and use shield and speed boosts.</p><div class="tags"><span>Game</span><span>Score</span><span>Power-ups</span></div></div></button>
+  </div>
+</section>
+
+<!-- LECHON -->
+<section id="cebu">
+  <h2 class="title reveal">TASTE OF <span>CEBU</span></h2>
+  <p class="sub reveal">Every gamer needs fuel. Mine is crispy, golden, world-famous Cebu Lechon.</p>
+  <div class="lechon">
+    <div class="reveal">
+      <div class="lech-img" id="lechImg" role="button" tabindex="0" aria-label="Cebu Lechon: click for a Lechon Power-Up">
+        <img id="lechMain" src="Images/six.jpg" alt="Whole crispy Cebu lechon served with sauces" onerror="this.style.display='none';document.getElementById('lechFb').style.display='grid'">
+        <div class="lech-fallback" id="lechFb"><div>🐖🔥<small>CEBU LECHON</small></div></div>
+        <div class="hint">👆 Click me for a power-up!</div>
+      </div>
+      <div class="thumbs" aria-label="More lechon photos">
+        <button aria-pressed="true" data-src="Images/six.jpg" data-alt="Whole crispy Cebu lechon served with sauces"><img src="Images/six.jpg" alt="Whole lechon"></button>
+        <button aria-pressed="false" data-src="Images/seven.jpg" data-alt="Sliced lechon with crackling skin"><img src="Images/seven.jpg" alt="Sliced lechon"></button>
+        <button aria-pressed="false" data-src="Images/five.jpg" data-alt="Crispy lechon skin dipped in sauce"><img src="Images/five.jpg" alt="Lechon skin dipped in sauce"></button>
+      </div>
+    </div>
+    <div class="lech-text reveal">
+      <h3>CRISPY. JUICY. LEGENDARY.</h3>
+      <p>Cebu lechon is known for its crackling skin and flavorful meat, so good that it needs no sauce. Winning a match is great. Winning a match and then eating lechon is the real victory.</p>
+      <div id="lechCap">🎁 Easter egg: click the lechon (or the floating badge) to power up!</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact glass reveal">
+    <h3>THANKS FOR STAYING, SIR! 🎉</h3>
+    <p>You've reached the end of the level. Want to squad up, build something, or just talk lechon?</p>
+    <div class="socials" id="socials"></div>
+    <div class="btns" id="contactBtns">
+      <button class="btn" id="ggBtn">🤝 SEND A GG</button>
+      <button class="btn alt" id="replayBtn">↺ REPLAY INTRO</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lbClose" aria-label="Close image">✕</button>
+  <img id="lbImg" src="" alt="">
+  <div id="lbCap"></div>
+</div>
+
+<footer>© 2026 Leigh Nicolie A. Formentera • Built with HTML, CSS &amp; JavaScript • Cebu, Philippines 🇵🇭</footer>
+<button id="power" aria-label="Lechon Power-Up">🐖 LECHON POWER-UP</button>
+
+<script src="script.js"></script>
+</body>
+</html>
